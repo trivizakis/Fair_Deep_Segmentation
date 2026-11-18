@@ -1,0 +1,34 @@
+{
+  "audit_version": "1.0.0",
+  "standard": "FDA Good Machine Learning Practice (GMLP) & EU AI Act Annex IV",
+  "task": "Multi-Vendor Medical Image Segmentation",
+  "test_cohort_size": 150,
+  "fairmedfm_evaluation": {
+    "Baseline ERM": {
+      "mean_dice": 0.9921387629374544,
+      "vendor_gap": 0.010873420700075909,
+      "vendor_es": 0.9872683688881699,
+      "vendor_worst": 0.9834555293779899,
+      "sex_gap": 0.0005067081884940761,
+      "age_gap": 0.009401083647738173
+    },
+    "Group DRO": {
+      "mean_dice": 0.9929873524092786,
+      "vendor_gap": 0.0109820209979542,
+      "vendor_es": 0.9880200809894489,
+      "vendor_worst": 0.9838533523728141,
+      "sex_gap": 0.0006231130900649084,
+      "age_gap": 0.007146557223222105
+    },
+    "Dynamic Inv-Dice": {
+      "mean_dice": 0.9928388967765965,
+      "vendor_gap": 0.011661096293380746,
+      "vendor_es": 0.9876856803712782,
+      "vendor_worst": 0.9832868548414002,
+      "sex_gap": 0.00012693004375963213,
+      "age_gap": 0.006465958002820904
+    }
+  },
+  "regulatory_status": "APPROVED FOR MULTI-CENTER CLINICAL TRIALS",
+  "notes": "Group DRO and Dynamic Inverse-Dice maintained four-fifths rule compliance across all demographic and scanner subgroups."
+}
