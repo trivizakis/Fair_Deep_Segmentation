@@ -23,12 +23,13 @@ An end-to-end framework and research benchmark demonstrating **Algorithmic Fairn
   - [4.2 Fairlearn MetricFrame: Disaggregated Auditing & 80% Rule](#42-fairlearn-metricframe-disaggregated-auditing--80-rule)
 - [5. Repository Structure](#5-repository-structure)
 - [6. Quickstart Guide](#6-quickstart-guide)
-- [7. Notebook Walkthroughs](#7-notebook-walkthroughs)
-  - [7.1 Notebook 1: In-Processing Fair Training](#71-notebook-1-in-processing-fair-training)
-  - [7.2 Notebook 2: Post-Hoc Fairness Auditing](#72-notebook-2-post-hoc-fairness-auditing)
-- [8. Benchmark Results & Comparative Analysis](#8-benchmark-results--comparative-analysis)
-- [9. Regulatory Compliance Checklist (FDA & EU AI Act)](#9-regulatory-compliance-checklist-fda--eu-ai-act)
-- [10. References & Further Reading](#10-references--further-reading)
+- [7. Developer Tutorial: Custom Datasets & Models (SegResNet, SwinUNETR, NIfTI)](TUTORIAL_CUSTOM_DATA_AND_MODELS.md)
+- [8. Notebook Walkthroughs](#8-notebook-walkthroughs)
+  - [8.1 Notebook 1: In-Processing Fair Training](#81-notebook-1-in-processing-fair-training)
+  - [8.2 Notebook 2: Post-Hoc Fairness Auditing](#82-notebook-2-post-hoc-fairness-auditing)
+- [9. Benchmark Results & Comparative Analysis](#9-benchmark-results--comparative-analysis)
+- [10. Regulatory Compliance Checklist (FDA & EU AI Act)](#10-regulatory-compliance-checklist-fda--eu-ai-act)
+- [11. References & Further Reading](#11-references--further-reading)
 
 ---
 
@@ -199,6 +200,7 @@ $$\text{Ratio} = \frac{\min_{g \in \mathcal{G}} \mathcal{M}_g}{\max_{g \in \math
 ```
 .
 ├── README.md                                          # Master repository documentation (this file)
+├── TUTORIAL_CUSTOM_DATA_AND_MODELS.md                 # Complete developer guide for plugging in real data & models
 ├── fair_med_utils.py                                  # Shared physics simulation, samplers & loss modules
 │
 ├── Group Distributionally Robust Optimization/        # IN-PROCESSING MODULE
